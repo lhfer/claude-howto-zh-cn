@@ -102,4 +102,4 @@ docstring-code-format = true
 [tool.bandit]
 targets = ["scripts"]
 exclude_dirs = ["scripts/tests", ".venv", "__pycache__"]
-skips = ["B101", "B113"]  # B113: httpx timeout false positive (timeout is set)
+skips = ["B101", "B113", "B404", "B603", "B607"]  # B113: httpx timeout false positive; B404/B603/B607: local subprocess validation in validate_localization.py
