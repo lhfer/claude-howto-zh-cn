@@ -92,6 +92,7 @@ claude mcp add --transport stdio myserver -- npx @myorg/mcp-server
 ```bash
 claude mcp add --scope project --transport http github https://api.github.com/mcp
 claude mcp add -s user --transport stdio memory -- npx @modelcontextprotocol/server-memory
+claude mcp add -s user --transport stdio deja -- npx -y @vshulcz/deja-vu mcp
 ```
 
 脚本化安装时也可以直接传 JSON：
